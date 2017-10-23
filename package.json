@@ -1,0 +1,32 @@
+{
+  "name": "webdriverio-test",
+  "version": "0.0.1",
+  "description": "Apartment Therapy Webdriver IO Test",
+  "main": "index.js",
+  "scripts": {
+    "build": "next build",
+    "dev": "NODE_ENV=development node server.js",
+    "start": "NODE_ENV=production node server.js",
+    "integration": "./node_modules/.bin/wdio ./conf/wdio.conf.js",
+    "integration-spec": "./node_modules/.bin/wdio ./conf/wdio.conf.js --spec $1",
+    "integration-suite": "./node_modules/.bin/wdio ./conf/wdio.conf.js --suite $1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "8.3.0",
+    "npm": "5.3.0"
+  },
+  "dependencies": {
+    "jest": "^21.2.1",
+    "moniker": "^0.1.2",
+    "wdio-spec-reporter": "^0.1.2",
+    "webdriverio": "^4.8.0"
+  },
+  "devDependencies": {
+    "wdio-jasmine-framework": "^0.3.2",
+    "wdio-junit-reporter": "^0.3.1",
+    "wdio-phantomjs-service": "^0.2.2"
+  }
+}
